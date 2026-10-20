@@ -143,7 +143,7 @@ jobs:
           cyan -i youtube.ipa -o YouTubePlus_Beta.ipa -uwef $tweaks -n "${{ github.event.inputs.display_name }}" -b ${{ github.event.inputs.bundle_id }}
 
       - name: Upload to GitHub Releases
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2.6.2
         with:
           tag_name: ytp-beta-${{ github.run_number }}
           name: YouTubePlus Beta (${{ github.run_number }})
